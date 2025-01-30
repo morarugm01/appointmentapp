@@ -1,8 +1,8 @@
 import './bootstrap';
 
 import { createApp } from 'vue' 
-import PostsIndex from './components/Posts/Index.vue' 
+import OrganizationsIndex from './pages/Organizations/Index.vue' 
  
 createApp({}) 
-    .component('PostsIndex', PostsIndex)
+    .component('OrganizationsIndex', OrganizationsIndex)
     .mount('#app')

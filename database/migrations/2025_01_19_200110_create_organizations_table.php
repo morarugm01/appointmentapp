@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('organizations', function (Blueprint $table) {
             $table->id();
             $table->string('name')->required();
+            $table->string('email')->required();
+            $table->string('phone_number');
             $table->timestamps();
         });
     }

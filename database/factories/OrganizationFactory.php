@@ -18,6 +18,8 @@ class OrganizationFactory extends Factory
     {
         return [
             'name' => $this->faker->name,
+            'email' => $this->faker->email,
+            'phone_number' => $this->faker->randomNumber(5),
         ];
     }
 }
