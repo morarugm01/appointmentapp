@@ -1,8 +1,18 @@
 import './bootstrap';
 
 import { createApp } from 'vue' 
-import OrganizationsIndex from './pages/Organizations/Index.vue' 
+import OrganizationIndex from './pages/Organization/Index.vue' 
+import { createRouter, createWebHistory } from 'vue-router';
  
+
+const routes = [
+    {path: '/', component: OrganizationIndex },
+]
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes
+})
 createApp({}) 
-    .component('OrganizationsIndex', OrganizationsIndex)
+    .use(router)
     .mount('#app')
