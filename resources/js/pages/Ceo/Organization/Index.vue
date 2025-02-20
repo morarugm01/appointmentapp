@@ -10,7 +10,7 @@ export default {
     },
     methods: {
         fetchOrganizations() {
-            axios.get('/api/ceo/organizations')
+            axios.get('/api/ceo/organization')
                 .then(response => this.organizations = response.data)
                 .catch(error => console.log(error))
         }
@@ -28,26 +28,35 @@ export default {
                             <span class="text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">ID</span>
                         </th>
                         <th class="px-6 py-3 bg-gray-50 text-left">
-                            <span class="text-xs leading-4 font-medium uppercase tracking-wider text-gray-500">Name</span>
+                            <span
+                                class="text-xs leading-4 font-medium uppercase tracking-wider text-gray-500">Name</span>
                         </th>
                         <th class="px-6 py-3 bg-gray-50 text-left">
-                            <span class="text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Email</span>
+                            <span
+                                class="text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Email</span>
                         </th>
                         <th class="px-6 py-3 bg-gray-50 text-left">
-                            <span class="text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Phone number</span>
+                            <span class="text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Phone
+                                number</span>
                         </th>
                         <th class="px-6 py-3 bg-gray-50 text-left">
-                            <span class="text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Created</span>
+                            <span
+                                class="text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Created</span>
                         </th>
                     </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-200 divide-solid">
                     <tr v-for="organization in organizations">
-                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{{ organization.id }}</td>
-                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{{ organization.name }}</td>
-                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{{ organization.email }}</td>
-                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{{ organization.phone_number }}</td>
-                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{{ organization.created_at }}</td>
+                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{{ organization.id }}
+                        </td>
+                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{{ organization.name }}
+                        </td>
+                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{{ organization.email
+                            }}</td>
+                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{{
+                            organization.phone_number }}</td>
+                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{{
+                            organization.created_at }}</td>
                     </tr>
                 </tbody>
             </table>
