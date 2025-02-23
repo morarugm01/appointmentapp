@@ -6,14 +6,11 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
-
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="h-full">
-        <div class="min-h-screen bg-gray-100" id="app">
+    <body class="min-h-screen bg-white dark:bg-gray-800" id="app">
             <main>
                 {{ $slot }}
             </main>
-        </div>
     </body>
 </html>

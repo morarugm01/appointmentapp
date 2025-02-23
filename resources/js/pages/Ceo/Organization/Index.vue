@@ -19,43 +19,43 @@ export default {
 </script>
 
 <template>
-    <div class="overflow-hidden overflow-x-auto p-6 bg-white border-gray-200">
-        <div class="min-w-full align-middle">
-            <table class="min-w-full divide-y divide-gray-200 border">
-                <thead>
-                    <tr>
-                        <th class="px-6 py-3 bg-gray-50 text-left">
-                            <span class="text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">ID</span>
+    <div class="overflow-hidden overflow-x-auto p-6">
+        <div class="min-w-full align-middle ring-1 ring-zinc-200 dark:ring-slate-700">
+            <table class="min-w-full divide-y divide-gray-300 dark:divide-slate-600">
+                <thead class="bg-zinc-200 dark:bg-slate-700">
+                    <tr> 
+                        <th class="px-6 py-3 text-left">
+                            <span class="text-xs leading-4 font-medium text-gray-500 dark:text-gray-300 tracking-wider">ID</span>
                         </th>
-                        <th class="px-6 py-3 bg-gray-50 text-left">
+                        <th class="px-6 py-3 text-left">
                             <span
-                                class="text-xs leading-4 font-medium uppercase tracking-wider text-gray-500">Name</span>
+                                class="text-xs leading-4 font-medium tracking-wider text-gray-500 dark:text-gray-300">Name</span>
                         </th>
-                        <th class="px-6 py-3 bg-gray-50 text-left">
+                        <th class="px-6 py-3 text-left">
                             <span
-                                class="text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Email</span>
+                                class="text-xs leading-4 font-medium text-gray-500 tracking-wider dark:text-gray-300">Email</span>
                         </th>
-                        <th class="px-6 py-3 bg-gray-50 text-left">
-                            <span class="text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Phone
+                        <th class="px-6 py-3 text-left">
+                            <span class="text-xs leading-4 font-medium text-gray-500 tracking-wider dark:text-gray-300">Phone
                                 number</span>
                         </th>
-                        <th class="px-6 py-3 bg-gray-50 text-left">
+                        <th class="px-6 py-3 text-left">
                             <span
-                                class="text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Created</span>
+                                class="text-xs leading-4 font-medium text-gray-500 tracking-wider dark:text-gray-300">Created</span>
                         </th>
                     </tr>
                 </thead>
-                <tbody class="bg-white divide-y divide-gray-200 divide-solid">
+                <tbody>
                     <tr v-for="organization in organizations">
-                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{{ organization.id }}
+                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 dark:text-gray-400">{{ organization.id }}
                         </td>
-                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{{ organization.name }}
+                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 dark:text-gray-400">{{ organization.name }}
                         </td>
-                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{{ organization.email
+                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 dark:text-gray-400">{{ organization.email
                             }}</td>
-                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{{
+                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 dark:text-gray-400">{{
                             organization.phone_number }}</td>
-                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{{
+                        <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 dark:text-gray-400">{{
                             organization.created_at }}</td>
                     </tr>
                 </tbody>
