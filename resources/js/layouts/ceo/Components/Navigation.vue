@@ -4,10 +4,10 @@ import MobileSidebar from './MobileSidebar.vue';
 import { Cog6ToothIcon, FolderIcon, HomeIcon, UsersIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
-    { name: 'Dashboard', to: '/ceo/dashboard', icon: HomeIcon, current: true },
-    { name: 'Organizations', to: '/ceo/organizations/index', icon: UsersIcon, current: false },
-    { name: 'Plans', to: '/ceo/plans/index', icon: FolderIcon, current: false },
-    { name: 'Settings', to: '/ceo/settings', icon: Cog6ToothIcon, current: false },
+    { name: 'Dashboard', to: {name: 'ceo.dashboard'}, icon: HomeIcon, current: true },
+    { name: 'Organizations', to: {name: 'ceo.organizations.index'}, icon: UsersIcon, current: false },
+    { name: 'Plans', to: {name: 'ceo.plans.index'}, icon: FolderIcon, current: false },
+    { name: 'Settings', to: {name: 'ceo.settings'}, icon: Cog6ToothIcon, current: false },
 
 ]
 </script>
