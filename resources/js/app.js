@@ -1,7 +1,7 @@
 import './bootstrap';
 import { createApp } from 'vue' 
-import App from './Layouts/ceo/Layout.vue';
-import router from './routes/index.js';
+import App from '@/Layouts/ceo/Layout.vue';
+import router from '@/routes/index.js';
 
  
 
