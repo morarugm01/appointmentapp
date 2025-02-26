@@ -40,7 +40,7 @@ const props = defineProps({
               <!-- Dark Mode Toggle Button -->
           <button 
             @click="toggleDarkMode"
-            class="p-2 fixed top-4 right-4 rounded bg-slate-200">
+            class="p-2  rounded bg-slate-200 dark:bg-slate-700">
             <span v-if="isDark">🌙 Dark Mode</span>
             <span v-else>☀️ Light Mode</span>
           </button>
