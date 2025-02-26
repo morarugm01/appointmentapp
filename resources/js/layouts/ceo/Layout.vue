@@ -1,6 +1,6 @@
 <script setup>
-import MainContent from './Components/MainContent.vue';
-import Navigation from './Components/Navigation.vue';
+import MainContent from '@/layouts/ceo/Components/MainContent.vue';
+import Navigation from '@/layouts/ceo/Components/Navigation.vue';
 </script>
 
 <template>
